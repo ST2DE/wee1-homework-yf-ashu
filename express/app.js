@@ -13,5 +13,5 @@ app.get('/about_me',function(req,res){
 
 
 app.listen(3000,function(){
-  console.log("開始運行！");
+  console.log("start server on port 3000！");
 })

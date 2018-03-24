@@ -40,4 +40,10 @@ git push
 1. https://zlargon.gitbooks.io/git-tutorial/content/
 2. https://gitbook.tw/
 
+git問題
+Updates were rejected because a pushed branch tip is behind its remote
+github上的版本跟自己本機的版本不同時
+git push -u origin master -f 
+強制更新成你電腦上的分支
+
 
