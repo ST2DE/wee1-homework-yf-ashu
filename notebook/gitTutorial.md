@@ -47,7 +47,11 @@ github上的版本跟自己本機的版本不同時
 強制更新成你電腦上的分支
 
 2. rebase in progress;onto 
-代碼發生衝突
-
+代碼發生衝突時
+```
+git status
+git add
+git rebase --continue
+```
 
 
