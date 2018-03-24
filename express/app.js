@@ -8,7 +8,9 @@ app.get('/',function(req,res){
 })
 
 app.get('/about_me',function(req,res){
-  res.render('about_me');
+//     res.send(req.query.name);
+    var user = {name:req.query.name }
+  res.render('about_me',{user:user});
 })
 
 
