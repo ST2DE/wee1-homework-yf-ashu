@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="/public/css/main.css">
     <title>Ashu's Profile</title>
 </head>
+
 <body>
     <div class="wrapper">
         <div class="bg">
@@ -18,14 +19,18 @@
                     <span></span>
                 </div>
                 <div class="nav">
-                    <a href="#popup" class="toggle">
+                    <a href="#popup" class="toggle toggle--none">
                         <span></span>
                         <span></span>
                         <span></span>
                     </a>
-                    <nav class="popup-menu" id="popup">    
-                                <a class="popup-menu_item" href="#about">About</a>
-                                <a class="popup-menu_item" href="#skill">Skill</a>
+                    <a href="#" class="toggle--close">
+                        <span></span>
+                        <span></span>
+                    </a>
+                    <nav class="popup--menu" id="popup">    
+                                <a class="popup--menu_item" href="#about">About</a>
+                                <a class="popup--menu_item" href="#skill">Skill</a>
                     </nav>
                 </div>
             </div>
@@ -34,15 +39,18 @@
             <div class="container-fluid">
 
                 <h1 class="title">
-                    HELLO <%= user.name %>
+                    WELCOME！
                     <br>
                 </h1>
-                <a href="#" class="btn btn--primary">
-                    Contact
+                <a href="/about" class="btn">
+                    About Me
                 </a>
             </div>
         </section>
     </div>
+
+
+
 </body>
 
 </html>
