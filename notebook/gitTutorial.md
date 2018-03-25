@@ -42,7 +42,12 @@ git push
 
 ## 其他指令
 ```
-git remote
+git diff
+```
+
+
+```
+git rm
 ```
 
 
@@ -62,6 +67,7 @@ git config --list
 參考資料：
 1. https://zlargon.gitbooks.io/git-tutorial/content/
 2. https://gitbook.tw/
+3. https://git-scm.com/book/en/v2
 
 ## Git問題
 1. Updates were rejected because a pushed branch tip is behind its remote
