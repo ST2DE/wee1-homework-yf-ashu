@@ -16,7 +16,7 @@
 ![](https://github.com/ST2DE/wee1-homework-yf-ashu/blob/master/notebook/img/postman3.png?raw=true)
 Header就是bodyParser要解析的資料
 ![](https://github.com/ST2DE/wee1-homework-yf-ashu/blob/master/notebook/img/postman4.png?raw=true)
-body裡的x-www-form-urlencoded就是我們要帶入的值
+body裡的x-www-form-urlencoded就是我們要帶入的值，填寫完按send他就會將結果顯示於下方
 ![](https://github.com/ST2DE/wee1-homework-yf-ashu/blob/master/notebook/img/postman5.png?raw=true)
 
 ## GET
@@ -25,6 +25,6 @@ get的測試資料比較簡單，就直接照著你設定的路徑看有沒有�
 
 
 參考資料：
-https://www.getpostman.com/docs/v6/
-https://dotblogs.com.tw/kinanson/2015/11/07/153838
-https://i5ting.github.io/node-http/
+1. https://www.getpostman.com/docs/v6/
+2. https://dotblogs.com.tw/kinanson/2015/11/07/153838
+3. https://i5ting.github.io/node-http/
