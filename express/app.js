@@ -13,7 +13,6 @@ app.get('/about_me',function(req,res){
   res.render('about_me',{user:user});
 })
 
-
 app.get('/about',function(req,res){
 //     res.send(req.query.name);
     var user = {name:req.query.name }

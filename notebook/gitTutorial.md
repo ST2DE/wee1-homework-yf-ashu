@@ -1,10 +1,8 @@
 ## Git 教學
 
 Git是什麼？
-版本控制，SVN
-
-
-
+git是一種版本控制系統，同樣為版本控制的還有SVN
+透過這樣的版本控制系統，可以清楚的記錄每個檔案是誰在什麼時候加進來、什麼時候被修改或刪除。
 
 ### 建立github專案
 如果在github上有專案的話可以先clone回來，這樣就可以直接remote了
@@ -42,32 +40,43 @@ git push
 
 ## 其他指令
 ```
+git log//按q可跳出瀏覽
 git diff
-```
 
+```
+git diff是比對檔案與版本差異
+先從git log中得到id資訊
+例如下圖
 
 ```
 git rm
 ```
+將檔案刪除
 
-
+``` 
+git mv 檔案名 資料夾
+```
+搬移檔案，這樣就不用add或rm檔案了
 ``` 
 git rebase
 ```
 
 ```
 git config --global
+git config --global  user.name "zlargon"
+git config --global  user.email "zlargon@icloud.com"
 ```
-
+設定初始參數
 ``` 
 git config --list
 ```
-
+可查看設定的參數
 
 參考資料：
 1. https://zlargon.gitbooks.io/git-tutorial/content/
 2. https://gitbook.tw/
 3. https://git-scm.com/book/en/v2
+4. https://ithelp.ithome.com.tw/users/20004901/ironman/525
 
 ## Git問題
 1. Updates were rejected because a pushed branch tip is behind its remote
