@@ -40,11 +40,13 @@ git push
 
 ## 其他指令
 
-.gitigore
-.gitignore 作用範圍
+### .gitigore 忽略檔案
+
 .gitignore 作用範圍包含整個資料夾以及其所有子資料夾
 .gitignore 也可以存在多個資料夾中
 每個資料夾都可以另外定義 .gitignore 的內容
+
+## git log 紀錄檔/git diff 比較
 
 ```
 git log//按q可跳出瀏覽
@@ -52,22 +54,34 @@ git diff
 
 ```
 git diff是比對檔案與版本差異
-先從git log中得到id資訊
+先從git log中得到id資訊(一長串數字的前五碼如e17f3)
 例如下圖
+![](https://github.com/ST2DE/wee1-homework-yf-ashu/blob/master/notebook/img/git%20diff1.png?raw=true)
+再將id資訊填入作比對
+如git diff 5293b 91d30 會呈現下圖資訊
+紅色為刪除，綠色為增加
+![](https://github.com/ST2DE/wee1-homework-yf-ashu/blob/master/notebook/img/git%20diff2.png?raw=true)
 
+## git rm
 ```
 git rm
 ```
 將檔案刪除
 
+## git mv
 ``` 
 git mv 檔案名 資料夾
 ```
 搬移檔案，這樣就不用add或rm檔案了
+
+
+## git rebase
 ``` 
 git rebase
 ```
+將不同分支上的差異點合併成一個新的commit
 
+## git config
 ```
 git config --global
 git config --global  user.name "zlargon"
