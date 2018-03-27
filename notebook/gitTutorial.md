@@ -39,6 +39,13 @@ git push
 就完成了
 
 ## 其他指令
+
+.gitigore
+.gitignore 作用範圍
+.gitignore 作用範圍包含整個資料夾以及其所有子資料夾
+.gitignore 也可以存在多個資料夾中
+每個資料夾都可以另外定義 .gitignore 的內容
+
 ```
 git log//按q可跳出瀏覽
 git diff
