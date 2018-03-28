@@ -5,7 +5,15 @@ git是一種版本控制系統，同樣為版本控制的還有SVN
 透過這樣的版本控制系統，可以清楚的記錄每個檔案是誰在什麼時候加進來、什麼時候被修改或刪除。
 
 什麼是版本控制？
+版本控制是一種軟體工程技巧，藉此能在軟體開發的過程中，確保由不同人所編輯的同一程式檔案都得到同步。
 
+好的版本控制系統有許多好處：
+
+* 中央協作中心的概念，能讓策劃開發人員一起工作。
+
+* 定義且公布最新更新的程式碼，除非程式碼被提交上去，否則不會被整合。
+
+* 維護專案的工作歷史記錄，將每一個特定版本內的具體內容建檔並編碼，甚至能列出差異。
 
 ### 建立github專案
 如果在github上有專案的話可以先clone回來，這樣就可以直接remote了
@@ -56,20 +64,19 @@ git push
 ```
 git log//按q可跳出瀏覽
 git diff
-
 ```
 git diff是比對檔案與版本差異
 
 先從git log中得到id資訊(一長串數字的前五碼如e17f3)
 
 例如下圖
+
 ![](https://github.com/ST2DE/wee1-homework-yf-ashu/blob/master/notebook/img/git%20diff1.png?raw=true)
 
 再將id資訊填入作比對
 
-如git diff 5293b 91d30 會呈現下圖資訊
+如git diff 5293b 91d30 會呈現下圖資訊(紅色為刪除，綠色為增加)
 
-紅色為刪除，綠色為增加
 ![](https://github.com/ST2DE/wee1-homework-yf-ashu/blob/master/notebook/img/git%20diff2.png?raw=true)
 
 ## git rm
