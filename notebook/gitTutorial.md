@@ -4,6 +4,9 @@ Git是什麼？
 git是一種版本控制系統，同樣為版本控制的還有SVN
 透過這樣的版本控制系統，可以清楚的記錄每個檔案是誰在什麼時候加進來、什麼時候被修改或刪除。
 
+什麼是版本控制？
+
+
 ### 建立github專案
 如果在github上有專案的話可以先clone回來，這樣就可以直接remote了
 ```
@@ -43,7 +46,9 @@ git push
 ### .gitigore 忽略檔案
 
 .gitignore 作用範圍包含整個資料夾以及其所有子資料夾
+
 .gitignore 也可以存在多個資料夾中
+
 每個資料夾都可以另外定義 .gitignore 的內容
 
 ## git log 紀錄檔/git diff 比較
@@ -54,11 +59,16 @@ git diff
 
 ```
 git diff是比對檔案與版本差異
+
 先從git log中得到id資訊(一長串數字的前五碼如e17f3)
+
 例如下圖
 ![](https://github.com/ST2DE/wee1-homework-yf-ashu/blob/master/notebook/img/git%20diff1.png?raw=true)
+
 再將id資訊填入作比對
+
 如git diff 5293b 91d30 會呈現下圖資訊
+
 紅色為刪除，綠色為增加
 ![](https://github.com/ST2DE/wee1-homework-yf-ashu/blob/master/notebook/img/git%20diff2.png?raw=true)
 
@@ -101,6 +111,7 @@ git config --list
 
 ## Git問題
 1. Updates were rejected because a pushed branch tip is behind its remote
+
 github上的版本跟自己本機的版本不同時
 
 ```
