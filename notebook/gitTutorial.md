@@ -1,11 +1,16 @@
 ## Git 教學
 
 Git是什麼？
-git是一種版本控制系統，同樣為版本控制的還有SVN
-透過這樣的版本控制系統，可以清楚的記錄每個檔案是誰在什麼時候加進來、什麼時候被修改或刪除。
+
+版本控制：主版與支流之間的控管
 
 什麼是版本控制？
 版本控制是一種軟體工程技巧，藉此能在軟體開發的過程中，確保由不同人所編輯的同一程式檔案都得到同步。
+
+git是一種版本控制系統，同樣為版本控制的還有SVN、FTP:像網路硬碟那樣的感覺，只有最後一位上傳的code會被保留而已，如果傳輸中途斷線了會變成亂碼
+
+透過這樣的版本控制系統，可以清楚的記錄每個檔案是誰在什麼時候加進來、什麼時候被修改或刪除。
+
 
 好的版本控制系統有許多好處：
 
@@ -15,7 +20,7 @@ git是一種版本控制系統，同樣為版本控制的還有SVN
 
 * 維護專案的工作歷史記錄，將每一個特定版本內的具體內容建檔並編碼，甚至能列出差異。
 
-### 建立github專案
+### 基礎建立github專案
 如果在github上有專案的話可以先clone回來，這樣就可以直接remote了
 ```
 mkdir 資料夾名稱
@@ -63,6 +68,7 @@ git push
 
 ```
 git log//按q可跳出瀏覽
+Git log —graph//圖形化
 git diff
 ```
 git diff是比對檔案與版本差異
@@ -92,11 +98,47 @@ git mv 檔案名 資料夾
 搬移檔案，這樣就不用add或rm檔案了
 
 
-## git rebase
+## git rebase與git merge差異
+
+他們作的事情一樣，都是合併，只是合併的過程不一樣
 ``` 
 git rebase
+git merge
 ```
-將不同分支上的差異點合併成一個新的commit
+![](https://github.com/ST2DE/wee1-homework-yf-ashu/blob/master/notebook/img/git%20diff3.png?raw=true)
+
+merge：兩分支會在master中有一個新的節點，現有的分支不會作改變
+
+![](https://wac-cdn.atlassian.com/dam/jcr:e229fef6-2c2f-4a4f-b270-e1e1baa94055/02.svg?cdnVersion=ka)
+
+rebase:直接在master上接上你的分支
+
+![](https://wac-cdn.atlassian.com/dam/jcr:5b153a22-38be-40d0-aec8-5f2fffc771e5/03.svg?cdnVersion=ka)
+
+## git branch 
+```
+git branch [new branch’s name]
+-r  act on remote-tracking branches
+-a  list both remote-tracking and local branches
+-d  delete fully merged branch
+-D  delete branch (even if not merged)
+```
+新增分支
+
+## git checkout 
+```
+git checkout
+```
+切換分支
+
+## git stash
+```
+git stash [apply不會刪之前的進度/pop會刪除以往的進度/list]
+```
+暫存你目前的工作，apply/pop是取出你的暫存，如下圖
+
+![](https:)
+
 
 ## git config
 ```
@@ -115,8 +157,10 @@ git config --list
 2. https://gitbook.tw/
 3. https://git-scm.com/book/en/v2
 4. https://ithelp.ithome.com.tw/users/20004901/ironman/525
+5. ![合併介紹](https://github.com/geeeeeeeeek/git-recipes/wiki/5.1-%E4%BB%A3%E7%A0%81%E5%90%88%E5%B9%B6%EF%BC%9AMerge%E3%80%81Rebase-%E7%9A%84%E9%80%89%E6%8B%A9)
 
 ## Git問題
+
 1. Updates were rejected because a pushed branch tip is behind its remote
 
 github上的版本跟自己本機的版本不同時
@@ -126,7 +170,7 @@ git push -u origin master -f
 ```
 強制更新成你電腦上的分支
 
-2. rebase in progress;onto 
+2. rebase in progress;
 代碼發生衝突時
 ```
 git status
