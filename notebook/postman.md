@@ -11,11 +11,24 @@
 左邊區塊為歷史紀錄及資料夾，右邊為可選擇request方式及url填入
 下方則是顯示區域
 
+
+![](https://github.com/ST2DE/wee1-homework-yf-ashu/blob/master/notebook/img/postman7.png?raw=true)
+
+![](https://github.com/ST2DE/wee1-homework-yf-ashu/blob/master/notebook/img/postman8.png?raw=true)
+
+![](https://github.com/ST2DE/wee1-homework-yf-ashu/blob/master/notebook/img/postman9.png?raw=true)
+
+![](https://github.com/ST2DE/wee1-homework-yf-ashu/blob/master/notebook/img/postman10.png?raw=true)
+
+![](https://github.com/ST2DE/wee1-homework-yf-ashu/blob/master/notebook/img/postman11.png?raw=true)
+
 ## POST
 將欲測試的POST連結貼到url裡
 ![](https://github.com/ST2DE/wee1-homework-yf-ashu/blob/master/notebook/img/postman3.png?raw=true)
+
 Header就是bodyParser要解析的資料
 ![](https://github.com/ST2DE/wee1-homework-yf-ashu/blob/master/notebook/img/postman4.png?raw=true)
+
 body裡的x-www-form-urlencoded就是我們要帶入的值，填寫完按send他就會將結果顯示於下方
 ![](https://github.com/ST2DE/wee1-homework-yf-ashu/blob/master/notebook/img/postman5.png?raw=true)
 

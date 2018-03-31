@@ -4,7 +4,7 @@ Git是什麼？
 
 版本控制：主版與支流之間的控管
 
-什麼是版本控制？
+* 什麼是版本控制？
 版本控制是一種軟體工程技巧，藉此能在軟體開發的過程中，確保由不同人所編輯的同一程式檔案都得到同步。
 
 git是一種版本控制系統，同樣為版本控制的還有SVN、FTP:像網路硬碟那樣的感覺，只有最後一位上傳的code會被保留而已，如果傳輸中途斷線了會變成亂碼
@@ -97,7 +97,6 @@ git mv 檔案名 資料夾
 ```
 搬移檔案，這樣就不用add或rm檔案了
 
-
 ## git rebase與git merge差異
 
 他們作的事情一樣，都是合併，只是合併的過程不一樣
@@ -137,7 +136,8 @@ git stash [apply不會刪之前的進度/pop會刪除以往的進度/list]
 ```
 暫存你目前的工作，apply/pop是取出你的暫存，如下圖
 
-![](https:)
+![](https://github.com/ST2DE/wee1-homework-yf-ashu/blob/master/notebook/img/git-stash1.png?raw=true)
+![](https://github.com/ST2DE/wee1-homework-yf-ashu/blob/master/notebook/img/git-stash2.png?raw=true)
 
 
 ## git config
