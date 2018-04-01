@@ -20,8 +20,8 @@
 /* $Globel
 ---------------------------*/
 
-@import "reset.css";
-@import "layout.css";
+@import "/public/css/reset.css";
+@import "/public/css/layout.css";
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Raleway:900');
 * {
@@ -72,18 +72,36 @@ ul {
     left: 0;
     width: 100%;
     height: 100%;
+    background: url('/public/img/web-01.png');
     background-size: cover;
     background-position: center;
-    background-image: url('/public/img/web-01.png');
 }
 
-.bg::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
+.bg--about {
+    background: #f4f4f4;
+}
+
+.pre {
     width: 100%;
     height: 100%;
+    background: #1a1caa;
+    z-index: 500;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.pre .preload {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    position: relative;
+    border-radius: 20%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s;
+    animation: preAni 1s infinite;
 }
 
 .header {
@@ -106,27 +124,26 @@ ul {
 
 /* logo */
 
-
 .logo,
 .toggle {
     padding: 24px;
     display: block;
     z-index: 200;
-
 }
 
 .logo span {
+    background: url('/public/img/web-02.png');
+    background-size: cover;
+    background-position: center;
     width: 40px;
     height: 40px;
     display: block;
     border-radius: 5px;
     transition: all .5s;
-    background-size: cover;
-    background-position: center;
-    background-image: url('/public/img/web-02.png');
 }
 
 .logo span:hover {
+    /* box-shadow: -2px 5px 9px rgba(0,0,0,.3); */
     cursor: pointer;
     transform: scale(1.2, 1.2);
 }
@@ -136,9 +153,12 @@ ul {
 .toggle {
     padding-top: 28px;
     transition: all .5s;
+    cursor: pointer;
+
 }
 
 .toggle span {
+    /* position: relative; */
     width: 32px;
     height: 3px;
     display: block;
@@ -156,6 +176,10 @@ ul {
     transform: translate(20%);
 }
 
+.toggle--hidden {
+    display: none;
+}
+
 /* toggle-close */
 
 .toggle--close {
@@ -165,8 +189,10 @@ ul {
     display: none;
     z-index: 200;
     transition: all .3s;
-    opacity: 0;
     visibility: hidden;
+    opacity: 0;
+    cursor: pointer;
+
 }
 
 .toggle--close span {
@@ -182,10 +208,12 @@ ul {
 }
 
 .toggle--close span:nth-child(1) {
+    /* 子代選取器 */
     transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .toggle--close span:nth-child(2) {
+    /* 子代選取器 */
     transform: translate(-50%, -50%)rotate(-45deg);
 }
 
@@ -193,10 +221,10 @@ ul {
     transform: rotate(180deg);
 }
 
-.nav {
-    transition: all .5s;
-    /* display: flex;
-    justify-content:flex-end; */
+.toggle--close--active {
+    display: block;
+    visibility: visible;
+    opacity: 1;
 }
 
 .popup--menu {
@@ -205,6 +233,7 @@ ul {
     top: 0;
     right: -100%;
     background-color: #1a1caa;
+    /* background-color: #4e4f95; */
     opacity: 0;
     visibility: hidden;
     position: fixed;
@@ -228,10 +257,17 @@ ul {
 
 .popup--menu_item:hover {
     color: #dcb677;
+    /* font-weight: 600; */
 }
 
 .popup--menu a:nth-child(1) {
-    margin-top: 104px;
+    padding-top: 104px;
+}
+
+.popup--menu--active {
+    opacity: 1;
+    visibility: visible;
+    right: 0;
 }
 
 /*-------------------------*/
@@ -240,13 +276,13 @@ ul {
 ---------------------------*/
 
 .main {
-    padding-top: 30vh;
+    padding-top: 15vh;
     padding-left: 10vw;
 }
 
 .title {
-    padding-top: 25vh;
-    padding-bottom: 44px;
+    padding-top: 44vh;
+    padding-bottom: 40px;
     font-size: 80px;
     letter-spacing: 5px;
     font-weight: 900;
@@ -281,4 +317,24 @@ ul {
 .btn:hover {
     background-color: #1a1caa;
     color: #f4f4f4;
+}
+
+
+.about .title{
+    padding-top: 5vh;
+}
+/*-------------------------*/
+
+/* $Animation
+---------------------------*/
+
+@keyframes preAni {
+    0%,
+    10% {
+        transform: rotate(-45deg);
+    }
+    90%,
+    100% {
+        transform: rotate(45deg);
+    }
 }
