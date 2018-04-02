@@ -1,5 +1,7 @@
 ## Git 教學
 
+=> 建議加上目錄，說明大概分成幾個段落。
+
 Git是什麼？
 
 版本控制：主版與支流之間的控管
@@ -11,6 +13,10 @@ git是一種版本控制系統，同樣為版本控制的還有SVN、FTP:像網�
 
 透過這樣的版本控制系統，可以清楚的記錄每個檔案是誰在什麼時候加進來、什麼時候被修改或刪除。
 
+=> 這一段前後怪怪的，「Git是什麼？」=> 應該先回「git是一種版本控制系統...」，再說明什麼是版本控制？
+
+=> 建議比較 git/SVN/FTP 的差別是什麼？
+
 
 好的版本控制系統有許多好處：
 
@@ -20,6 +26,8 @@ git是一種版本控制系統，同樣為版本控制的還有SVN、FTP:像網�
 
 * 維護專案的工作歷史記錄，將每一個特定版本內的具體內容建檔並編碼，甚至能列出差異。
 
+=> 什麼是「中央協作中心的概念」？可以搭配「git/SVN/FTP 比較」一起講
+
 ### 基礎建立github專案
 如果在github上有專案的話可以先clone回來，這樣就可以直接remote了
 ```
@@ -28,11 +36,18 @@ cd my_project
 git init
 git clone 你的專案
 ```
+
+=> git init & git clone 應該只要擇一就好？
+
+=> 比較「git init」前後，資料夾內的差異
+
 好了之後
 ```
 git status //看狀態
 ```
 Untracked files的話是全新的檔案，尚未被提交過
+
+> 除了 git status ，也很長會用到 git diff 。
 
 ```
 git add 你的檔案
@@ -54,6 +69,8 @@ git push
 
 就完成了
 
+=> 說明 Untracked，Unmodified，Modified，Staged/Commited 的關係。
+
 ## 其他指令
 
 ### .gitigore 忽略檔案
@@ -72,6 +89,8 @@ Git log —graph//圖形化
 git diff
 ```
 git diff是比對檔案與版本差異
+
+=> 為什麼第二行 G 要大寫
 
 先從git log中得到id資訊(一長串數字的前五碼如e17f3)
 
