@@ -46,6 +46,8 @@ get的測試資料比較簡單，就直接照著你設定的路徑看有沒有�
 ![](https://github.com/ST2DE/wee1-homework-yf-ashu/blob/master/notebook/img/postman6.png?raw=true)
 
 
+=> 要加上 express 的設定， Response 符不符合預期
+
 參考資料：
 1. https://www.getpostman.com/docs/v6/
 2. https://dotblogs.com.tw/kinanson/2015/11/07/153838
