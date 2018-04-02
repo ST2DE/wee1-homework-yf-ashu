@@ -45,6 +45,7 @@ body裡的x-www-form-urlencoded就是我們要帶入的值，填寫完按send他
 get的測試資料比較簡單，就直接照著你設定的路徑看有沒有結果就行了
 ![](https://github.com/ST2DE/wee1-homework-yf-ashu/blob/master/notebook/img/postman6.png?raw=true)
 
+=> 要寫一下 express 的內容，才知道這樣的 Request & Response 是不是對的
 
 參考資料：
 1. https://www.getpostman.com/docs/v6/
