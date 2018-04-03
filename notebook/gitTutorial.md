@@ -84,7 +84,7 @@ git push
 
 就完成了
 
-* 補充說明:檔案狀態
+#### 補充說明:檔案狀態
  * Untracked：檔案尚未被追蹤時的初始狀態
  * Unmodified：將untracked的檔案加入追蹤，以及staged狀態的檔案commit後
  * Modified：檔案只要有修改就會到這個狀態
