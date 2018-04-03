@@ -41,6 +41,15 @@ Header就是bodyParser要解析的資料
 body裡的x-www-form-urlencoded就是我們要帶入的值，填寫完按send他就會將結果顯示於下方
 ![](https://github.com/ST2DE/wee1-homework-yf-ashu/blob/master/notebook/img/postman5.png?raw=true)
 
+* Post裡的檔案設定如下：
+```javascript
+app.post('/', function(req, res){
+    console.log(request.body);
+    res.send(req.body.name);
+});
+```
+預期輸入key:name的值之後會顯示出來，上圖結果如預期顯示的相符
+
 ## GET
 get的測試資料比較簡單，就直接照著你設定的路徑看有沒有結果就行了
 ![](https://github.com/ST2DE/wee1-homework-yf-ashu/blob/master/notebook/img/postman6.png?raw=true)
