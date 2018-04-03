@@ -1,5 +1,14 @@
 ## Git 教學
 
+* 目錄
+  * 介紹Git是什麼
+  * 版本控制比較
+  * 基礎建立github專案
+  * 其他指令
+  * Git問題
+  * 參考資料
+
+
 Git是什麼？
 
 git是一種版本控制系統，同樣為版本控制的還有SVN、FTP
@@ -21,13 +30,13 @@ git是一種版本控制系統，同樣為版本控制的還有SVN、FTP
 
   * 維護專案的工作歷史記錄，將每一個特定版本內的具體內容建檔並編碼，甚至能列出差異。
   
-* 版本控制比較
-|             | FTP      | SVN     |  Git     |
-| --------  | -------- | -------- |
-| 版本控制 | 各自的主機 |集中式 |分散式|
-| 網路需求 | 需連網運作|需連網運作 |可線下執行  |
-|  檔案庫  | 需自行管理及命名 | 中央版本庫及分支 |使用者皆有獨立版本庫及分支|
-|同步提交|只有最後那個人有提供上去|
+### 版本控制比較
+|          | FTP      | SVN     |  Git     |
+| -------- | -------- | -------- |-------- |
+|版本控制    |各自的主機 |集中式 |分散式|
+| 網路需求   | 需連網運作|需連網運作 |可線下執行 |
+|  檔案庫    | 需自行管理及命名 | 中央版本庫及分支 |使用者皆有獨立版本庫及分支|
+|同步提交|只有最後那個人有提供上去|可同步提交上去|可同步提交上去|
 
 > 集中式版本控制系統 VS 分散式版本控制系統
 * 集中式版本控制系統 
@@ -194,13 +203,6 @@ git config --list
 ```
 可查看設定的參數
 
-參考資料：
-1. https://zlargon.gitbooks.io/git-tutorial/content/
-2. [Git官網](https://gitbook.tw/)
-3. https://git-scm.com/book/en/v2
-4. https://ithelp.ithome.com.tw/users/20004901/ironman/525
-5. [合併介紹](https://github.com/geeeeeeeeek/git-recipes/wiki/5.1-%E4%BB%A3%E7%A0%81%E5%90%88%E5%B9%B6%EF%BC%9AMerge%E3%80%81Rebase-%E7%9A%84%E9%80%89%E6%8B%A9)
-6. [成大資工wiki](http://wiki.csie.ncku.edu.tw/git)
 
 ## Git問題
 
@@ -220,5 +222,13 @@ git status
 git add
 git rebase --continue
 ```
+
+## 參考資料：
+1. [Git](https://zlargon.gitbooks.io/git-tutorial/content/)
+2. [為你自己學 Git](https://gitbook.tw/)
+3. [Git官方](https://git-scm.com/book/en/v2)
+4. [30天精通Git版本控管](https://ithelp.ithome.com.tw/users/20004901/ironman/525)
+5. [合併介紹](https://github.com/geeeeeeeeek/git-recipes/wiki/5.1-%E4%BB%A3%E7%A0%81%E5%90%88%E5%B9%B6%EF%BC%9AMerge%E3%80%81Rebase-%E7%9A%84%E9%80%89%E6%8B%A9)
+6. [成大資工wiki](http://wiki.csie.ncku.edu.tw/git)
 
 
